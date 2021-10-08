@@ -218,8 +218,6 @@ font-weight: bold;
     white-space: nowrap;
 }
 
-
-
 .btn--primary {
     background-color: var(--color-primary);
     color: #fff;
@@ -227,7 +225,6 @@ font-weight: bold;
 .btn--primary:hover {
     background: #3a8ffd;
 }
-
 
 .btn--secondary {
     background-color: var(--color-secondary);
@@ -237,13 +234,17 @@ font-weight: bold;
     background: #00c8eb;
 }
 
-
 .btn--accent {
     background-color: var(--color-accent);
     color: #fff;
 }
 .btn--accent:hover {
     background: #ec3000;
+}
+
+.btn--stretched {
+    padding-left: 6rem;
+    padding-right: 6rem;
 }
 
 .btn--block {
@@ -509,3 +510,53 @@ font-weight: bold;
     margin-left: 6rem;
 }
 }
+
+/* callouts */
+
+.callout {
+    padding: 4rem;
+    border-radius: 5px;
+}
+
+.callout--primary {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.callout__content {
+    text-align: center;
+}
+
+.callout__heading {
+    font-size: 3rem;
+    margin-top: 0;
+    color: #fff;
+}
+
+.callout--text {
+    font-size: 2rem;
+}
+
+.callout .btn{
+    justify-self: center;
+    align-self: center;
+}
+
+@media screen and (min-width: 768px){
+    .callout .grid--1x2 {
+        grid-template-columns: 1fr auto;
+    }
+
+    .callout__content {
+        text-align: left;
+    }
+
+    .callout .btn {
+        justify-self: start;
+        margin: 0 2rem;
+    }
+}
+
+/* Collapsibles */
+
+
