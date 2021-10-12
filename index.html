@@ -15,29 +15,29 @@
     <link rel="stylesheet" href="CSS/normalize-css.css" />
   </head>
   <body>
-    <section class="block block--dark block--skewed-left hero">
-      <div class="container grid grid--1x2">
-        <header class="block__header hero__content">
-          <h1 class="block__heading">Cloud Hosting for Pros</h1>
-          <p class="hero__tagline">
-            Deploy your websites in less then 60 second.
-          </p>
-          <a href="" class="btn btn--accent btn--stretched">Get Started</a>
-        </header>
-        <picture>
-          <source
-            type="image/webp"
-            srcset="images/banner1x.webp, images/banner2x.webp"
-          />
-
-          <source
-            type="image/png"
-            srcset="images/banner1x.png, images/banner2x.png"
-          />
-
-          <img class="hero__image" src="images/banner.png" alt="" />
-        </picture>
+    <section class="block container block-domain">
+      <header class="block__header">
+        <h2>Starting at £9 a month</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, cum?
+        </p>
+      </header>
+      <div class="input-group">
+        <input type="text" class="input" placeholder="Enter Domain Name Here" />
+        <button class="btn btn--accent">
+          <svg class="icon icon--white">
+            <use xlink:href="images/sprite.svg#search"></use></svg
+          >Search
+        </button>
       </div>
+      <ul class="list block-domain__prices">
+        <li><span class="badge badge--secondary">.com £9</span></li>
+        <li>.sg £10</li>
+        <li>.space £11</li>
+        <li>.info £14</li>
+        <li>.net £12</li>
+        <li>.co.uk £15</li>
+      </ul>
     </section>
 
     <script src="main.js"></script>
