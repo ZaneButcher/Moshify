@@ -791,6 +791,19 @@ a {
   margin: 0 auto;
 }
 
+/* Features Block */
+
+.feature {
+  gap:4rem 2rem;
+}
+
+.feature__heading {
+  margin: 1rem 0;
+}
+
+.feature__img {
+  width: 100%;
+}
 
 
 
