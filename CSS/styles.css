@@ -33,6 +33,7 @@ h2,
 h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
+  line-height: 1.1;
 }
 
 h1 {
@@ -567,10 +568,6 @@ a {
   font-size: 3rem;
 }
 
-.collapsible .icon {
-  
-}
-
 .collapisble__line {
   transform: rotate(-90deg);
   transition: transform 0.3s;
@@ -614,6 +611,7 @@ a {
 
 .block--dark .block__heading {
   color: #fff;
+
 }
 
 .block--skewed-right {
@@ -695,4 +693,34 @@ a {
     .nav__item {
         border-bottom: none;
     }
+}
+
+/* Hero TagLine */
+
+.hero__tagline {
+  font-size: 2rem;
+  color: #b9c3cf;
+  letter-spacing: 1px;
+  margin: 2rem 0 5rem;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+.hero {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+}
+
+@media screen and (min-width: 768px){
+  .hero {
+    padding-top: 0;
+  }
+
+  .hero__content {
+    text-align: left;
+    align-self: center;
+  }
+
+
 }
