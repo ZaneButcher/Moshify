@@ -154,6 +154,7 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
+
 }
 
 .list--inline .list__item {
@@ -222,7 +223,7 @@ a {
   font-weight: 600;
   text-align: center;
   margin: 1rem 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-transform: uppercase;
   white-space: nowrap;
   outline: 0;
@@ -310,6 +311,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -386,6 +388,8 @@ a {
 
 .plan--popular {
   transform: scale(1.1);
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .plan--popular .card__header {
@@ -409,7 +413,12 @@ a {
   transform: scale(1.15);
 }
 
-
+@media screen and (min-width: 768px) {
+  .plan--popular {
+  margin-left: 0;
+  margin-right: 0;
+}
+}
 
 @media screen and (min-width: 1024px) {
   .plan__name {
@@ -633,12 +642,13 @@ a {
 /* Blocks */
 
 .block {
-  --padding-vertical: 6rem;
+  --padding-vertical: 4rem;
   padding: var(--padding-vertical) 2rem;
 }
 
 .block__header {
   text-align: center;
+  padding-bottom: 4rem;
 }
 
 .block__heading {
@@ -758,6 +768,7 @@ a {
   }
 
   .hero__content {
+    padding-left: 20px;
     text-align: left;
     align-self: center;
   }
@@ -773,8 +784,9 @@ a {
 }
 
 .block-domain__prices {
+  color: var(--color-headings);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
@@ -804,7 +816,7 @@ a {
 
 .feature {
   gap:4rem 2rem;
-  margin: 8rem 0;
+  margin-top: 0;
 }
 
 .feature__heading {
@@ -815,9 +827,7 @@ a {
   width: 100%;
 }
 
-.feature:first-of-type {
-  margin-top: 6rem;
-}
+
 
 /* Showcase Block */
 
@@ -929,5 +939,11 @@ a {
     padding-left: 0;
     margin-top: 5px;
   }
-
 }
+
+/* Callout Card - Near Footer */
+
+.callout-signup {
+  transform: translateY(2rem);
+}
+
