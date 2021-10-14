@@ -639,7 +639,6 @@ a {
 
 .block__header {
   text-align: center;
-  
 }
 
 .block__heading {
@@ -847,6 +846,88 @@ a {
 }
 
 
-/* Testimonial Block */
+/* Footer*/
 
+.footer {
+  background: #232323;
+}
 
+.footer__section {
+  padding: 2rem;
+  border-bottom: 1px solid #393939;
+}
+
+.footer__heading {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer__brand {
+  margin-top: 5rem;
+  text-align: center;
+}
+
+/* TODO: Consider Refactoring this and applying to all images */
+.footer__brand img {
+  width: 100%;
+  max-width: 230px;
+}
+
+.footer__copyright {
+  font-size: 1.5rem;
+  color: #fff;
+  opacity: 0.3;
+}
+
+.footer li,  a {
+  color: #777;
+  list-style-type: none;
+  transition: 0.3s;
+}
+
+  .footer a:hover {
+    color: #fff;
+  }
+
+  .footer .list {
+    margin: 0;
+  }
+
+@media screen and (min-width: 768px) {
+  .footer__sections {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+
+  .footer .collapisble__line {
+    display: none;
+  }
+
+  .footer .collapsible__content {
+    opacity: 1;
+    max-height: 100%;
+  }
+
+  .footer__brand {
+    order: -1;
+    margin-top: 1rem;
+    margin-right: 20px;
+  }
+
+  .footer__section {
+    border: none;
+  }
+
+  .footer__heading {
+    font-size: 1.6rem;  
+}
+  .footer a {
+    font-size: 1.5rem;
+  }
+
+  .footer ul {
+    padding-left: 0;
+    margin-top: 5px;
+  }
+
+}
