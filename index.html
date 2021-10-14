@@ -13,12 +13,13 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="CSS/normalize-css.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
       <nav class="nav collapsible collapsible--expanded">
         <a href="/">
-          <img id="nav__logo" src="images/logo.svg" alt="Moshi Logo" />
+          <img id="nav__logo" src="images/logo.svg" alt="Moshi Logo" data-aos="zoom-in"/>
         </a>
         <svg class="icon icon--white nav__toggler">
           <use xlink:href="images/sprite.svg#menu"></use>
@@ -59,7 +60,7 @@
     </section>
     
  <section class="block container block-domain">
-      <header class="block__header">
+      <header class="block__header"data-aos="fade-down">
         <h2>Starting at £9 a month</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, cum?</p>
       </header>
@@ -164,7 +165,7 @@
     </p>
   </header>
   <article class="grid grid--1x2 feature">
-    <div class="feature__content">
+    <div class="feature__content" data-aos="zoom-in-right"> 
       <span class="icon-container">
         <svg class="icon icon--primary">
           <use xlink:href="images/sprite.svg#easy"></use>
@@ -178,7 +179,7 @@
       <a href="#" class="link-arrow">Learn More</a>
     </div>
 
-    <picture>
+    <picture data-aos="fade-up">
       <source
         type="image/webp"
         srcset="images/easy@1x.webp, images/easy@2x.webp"
@@ -196,7 +197,7 @@
 
 <section class="block container">
   <article class="grid grid--1x2 feature">
-    <picture>
+    <picture data-aos="fade-up">
       <source
         type="image/webp"
         srcset="images/fast/fast@1x.webp, images/fast/fast@2x.webp"
@@ -208,7 +209,7 @@
       <img class="feature__img" src="images/fast/fast.jpg" alt="" />
     </picture>
 
-    <div class="feature__content">
+    <div class="feature__content" data-aos="zoom-in-left">
       <span class="icon-container">
         <svg class="icon icon--primary">
           <use xlink:href="images/sprite.svg#computer"></use>
@@ -228,7 +229,7 @@
 
 <section class="block container">
   <article class="grid grid--1x2 feature">
-    <div class="feature__content">
+    <div class="feature__content" data-aos="zoom-in-right">
       <span class="icon-container">
         <svg class="icon icon--primary">
           <use xlink:href="images/sprite.svg#wordpress"></use>
@@ -242,7 +243,7 @@
       <a href="#" class="link-arrow">Learn More</a>
     </div>
 
-    <picture>
+    <picture data-aos="fade-up">
       <source
         type="image/webp"
         srcset="
@@ -267,7 +268,7 @@
 
 <section class="block container">
   <article class="grid grid--1x2 feature">
-    <picture>
+    <picture data-aos="fade-up">
       <source
         type="image/webp"
         srcset="images/support/support@1x.webp, images/support/support@2x.webp"
@@ -279,8 +280,8 @@
       <img class="feature__img" src="images/support/support.jpg" alt="" />
     </picture>
 
-    <div class="feature__content">
-      <span class="icon-container">
+    <div class="feature__content" data-aos="zoom-in-left">
+      <span class="icon-container" >
         <svg class="icon icon--primary">
           <use xlink:href="images/sprite.svg#clock"></use>
         </svg>
@@ -334,11 +335,11 @@
           <li> <div class="media">
             <div class="media__image">
               <svg class="icon icon--primary">
-              <use xlink:href="images/sprite.svg#computer"></use>
+              <use xlink:href="images/sprite.svg#growth"></use>
               </svg>
               </div>
               <div class="media__body">
-                <h3 class="media__title">Easy Start & Managed Updated</h3>
+                <h3 class="media__title">Staging, GIT & WP-CLI</h3>
                 <p>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam accusamus numquam sunt! Magnam molestias quos, odit asperiores animi praesentium autem.
                 </p>
@@ -349,11 +350,11 @@
           <li> <div class="media">
             <div class="media__image">
               <svg class="icon icon--primary">
-                <use xlink:href="images/sprite.svg#computer"></use>
+                <use xlink:href="images/sprite.svg#wordpress"></use>
               </svg>
                 </div>
                   <div class="media__body">
-                    <h3 class="media__title">Easy Start & Managed Updated</h3>
+                    <h3 class="media__title">Dynamic Caching & More</h3>
                   <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam accusamus numquam sunt! Magnam molestias quos, odit asperiores animi praesentium autem.
                   </p>
@@ -367,7 +368,7 @@
 
    <section class="block">
       <header class="block__header">
-        <h2>What our Customers are Saying</h2>
+        <h2 data-aos="zoom-in">What our Customers are Saying</h2>
         <p>Lorem, ipsum dolor sit amet consectetur!</p>
       </header>
     </section>
@@ -500,5 +501,9 @@
 
 
     <script src="main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   </body>
 </html>
